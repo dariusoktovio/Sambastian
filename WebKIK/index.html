@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Sambastian — Intralogistics & Mobile Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="img/logo.png" alt="PT Sambastian" class="navbar__logo-img" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#visi-misi">Visi & Misi</a></li>
+        <li><a href="#product">Produk</a></li>
+        <li><a href="#legalitas">Legalitas</a></li>
+        <li><a href="#leadership">Team</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary navbar__cta">Hubungi Kami</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <div class="section-tag">Intralogistics · Mobile Robotics</div>
+        <h1>Solusi Robotika<br /><span>Mobilitas Terdepan</span><br />Untuk Industri Modern.</h1>
+        <p>PT Sambastian menghadirkan robot mobile berbasis Wi-Fi yang dirancang untuk mempermudah pemindahan barang skala kecil hingga sedang di berbagai industri dan ruang kerja.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Hubungi Kami</a>
+          <a href="#product" class="btn btn--ghost">Lihat Produk &rarr;</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__bot" id="heroVisual">
+          <button class="hero__arrow hero__arrow--prev" id="slidePrev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="hero__slide active" id="slideImg">
+            <img src="img/robot.png" alt="Sambastian Robot" />
+          </div>
+          <div class="hero__slide" id="slideLocal">
+            <video id="localVid" src="img/vid.mp4" muted playsinline preload="metadata"></video>
+          </div>
+          <button class="hero__arrow hero__arrow--next" id="slideNext">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="hero__dots">
+          <span class="hero__dot active" id="dot0"></span>
+          <span class="hero__dot" id="dot1"></span>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">Wi-Fi</span>
+            <span class="stat__label">Remote Control</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">ESP8266</span>
+            <span class="stat__label">NodeMCU Core</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">4WD</span>
+            <span class="stat__label">Motor DC Drive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">Company Overview</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section-title">PT Sambastian —<br />Mendefinisikan ulang efisiensi transportasi barang.</h2>
+          <p>
+            PT Sambastian adalah perusahaan layanan digital marketing dan robotika mobilitas yang berkomitmen menghadirkan solusi otomasi logistik internal untuk berbagai industri dan ruang kerja.
+          </p>
+          <p>
+            Didirikan dan dipimpin oleh <strong>Christian Matthew Napitupulu</strong> selaku Direktur, perusahaan kami berfokus pada perancangan robot mobile yang tangguh, presisi tinggi, dan mudah dioperasikan tanpa pelatihan rumit.
+          </p>
+          <a href="#contact" class="btn btn--primary">Bekerja Sama</a>
+        </div>
+        <div class="about__cards">
+          <div class="about-card">
+            <div class="about-card__icon">📍</div>
+            <h3>Alamat</h3>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Angsana+Rw.+Buntu+Kec.+Serpong+Kota+Tangerang+Selatan+Banten+15310" target="_blank" rel="noopener noreferrer" class="maps-link">Jl. Angsana, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310 📍</a></p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon">📞</div>
+            <h3>Telepon</h3>
+            <p><a href="https://wa.me/62881025268889" target="_blank" rel="noopener noreferrer">+62 881-0252-68889</a></p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon">✉️</div>
+            <h3>Email</h3>
+            <p><a href="#" class="email-link" data-email="24christian.napitupulu@oel.sch.id">24christian.napitupulu@oel.sch.id</a></p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon">🌐</div>
+            <h3>Website</h3>
+            <p>sambastian.netlify.app</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT & OBJECTIVES ========== -->
+  <section class="features" id="product">
+    <div class="container">
+      <div class="section-tag">Our Product</div>
+      <h2 class="section-title center">Robot Logistik Sambastian</h2>
+      <p class="section-subtitle center">Robot mobile berbasis Wi-Fi untuk otomasi pengangkutan barang internal.</p>
+
+      <div class="features__grid" style="margin-top: 48px;">
+
+        <!-- Objectives -->
+        <div class="feature-item">
+          <div class="feature-item__num">01</div>
+          <h3>Simulasi Otomasi Logistik</h3>
+          <p>Mensimulasikan proses otomasi logistik di lingkungan industri secara nyata dan efisien.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">02</div>
+          <h3>Problem Solving</h3>
+          <p>Pengembangan logika pemecahan masalah dalam sistem transportasi barang internal.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">03</div>
+          <h3>Keterampilan Psikomotorik</h3>
+          <p>Melatih keterampilan psikomotorik dan ketelitian operator dalam kendali robot.</p>
+        </div>
+
+        <!-- Features -->
+        <div class="feature-item">
+          <div class="feature-item__num">04</div>
+          <h3>Bergerak Maju & Mundur</h3>
+          <p>Robot mampu bergerak maju dan mundur secara presisi sesuai perintah operator.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">05</div>
+          <h3>Remote Control Wi-Fi</h3>
+          <p>Dikendalikan sepenuhnya melalui remote control berbasis koneksi Wi-Fi yang responsif.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">06</div>
+          <h3>Kompartemen Kargo</h3>
+          <p>Dilengkapi kompartemen kargo khusus untuk membawa barang dengan aman dan stabil.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VISI MISI ========== -->
+  <section class="visi-misi" id="visi-misi">
+    <div class="container">
+      <div class="section-tag">Visi &amp; Misi</div>
+      <div class="visi-misi__grid">
+
+        <!-- VISI -->
+        <div class="visi-box">
+          <div class="visi-box__icon">🎯</div>
+          <h2 class="visi-box__label">Visi</h2>
+          <p class="visi-box__text">
+            Menjadi penyedia solusi robotika mobilitas terdepan yang mendefinisikan ulang 
+            efisiensi transportasi barang internal di berbagai industri dan ruang kerja.
+          </p>
+        </div>
+
+        <!-- MISI -->
+        <div class="misi-box">
+          <div class="misi-box__header">
+            <div class="visi-box__icon">🚀</div>
+            <h2 class="visi-box__label">Misi</h2>
+          </div>
+          <ul class="misi-list">
+            <li>
+              <div class="misi-list__num">01</div>
+              <p>Merancang robot mobile yang tangguh, stabil, dan presisi tinggi untuk mempermudah pemindahan barang skala kecil hingga sedang.</p>
+            </li>
+            <li>
+              <div class="misi-list__num">02</div>
+              <p>Mengembangkan sistem kendali jarak jauh (remote control) yang intuitif, responsif, dan mudah dioperasikan tanpa membutuhkan pelatihan rumit.</p>
+            </li>
+            <li>
+              <div class="misi-list__num">03</div>
+              <p>Membantu mitra bisnis menghemat waktu, tenaga kerja fisik, dan risiko cedera operasional dalam aktivitas pengangkutan barang harian.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEGALITAS ========== -->
+  <section class="legalitas" id="legalitas">
+    <div class="container">
+      <div class="section-tag">Legalitas Perusahaan</div>
+      <h2 class="section-title">Dokumen &amp; Legalitas<br /><span style="color:var(--accent)">PT Sambastian</span></h2>
+      <p class="legalitas__intro">PT Sambastian beroperasi secara resmi dan terdaftar sesuai ketentuan hukum yang berlaku di Indonesia.</p>
+
+      <div class="legalitas__grid">
+
+        <!-- Akta Pendirian -->
+        <div class="legal-card" data-legal="akta" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">📜</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">Akta Pendirian</span>
+            <h3 class="legal-card__title">Akta Notaris Pendirian PT</h3>
+            <p class="legal-card__desc">Perusahaan didirikan secara resmi berdasarkan akta notaris sesuai Undang-Undang No. 40 Tahun 2007 tentang Perseroan Terbatas.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Terdaftar</span>
+          </div>
+        </div>
+
+        <!-- NIB -->
+        <div class="legal-card" data-legal="nib" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">🏛️</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">NIB</span>
+            <h3 class="legal-card__title">Nomor Induk Berusaha</h3>
+            <p class="legal-card__desc">NIB diterbitkan melalui sistem OSS (Online Single Submission) Kementerian Investasi / BKPM Republik Indonesia.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Aktif</span>
+          </div>
+        </div>
+
+        <!-- NPWP -->
+        <div class="legal-card" data-legal="npwp" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">💼</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">NPWP Badan</span>
+            <h3 class="legal-card__title">Nomor Pokok Wajib Pajak</h3>
+            <p class="legal-card__desc">PT Sambastian terdaftar sebagai wajib pajak badan di Direktorat Jenderal Pajak dan memenuhi kewajiban perpajakan secara rutin.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Terdaftar</span>
+          </div>
+        </div>
+
+        <!-- SIUP / Izin Usaha -->
+        <div class="legal-card" data-legal="siup" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">📋</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">Izin Usaha</span>
+            <h3 class="legal-card__title">Surat Izin Usaha Perdagangan</h3>
+            <p class="legal-card__desc">Izin usaha perdagangan dan jasa diterbitkan oleh instansi berwenang di Kota Tangerang Selatan, Banten.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Berlaku</span>
+          </div>
+        </div>
+
+        <!-- Domisili -->
+        <div class="legal-card" data-legal="domisili" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">📍</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">Domisili Usaha</span>
+            <h3 class="legal-card__title">Surat Keterangan Domisili</h3>
+            <p class="legal-card__desc">Berdomisili resmi di Jl. Angsana, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Berlaku</span>
+          </div>
+        </div>
+
+        <!-- Struktur Kepemilikan -->
+        <div class="legal-card" data-legal="struktur" style="cursor:pointer;" title="Lihat Detail">
+          <div class="legal-card__icon">👥</div>
+          <div class="legal-card__body">
+            <span class="legal-card__label">Struktur Perusahaan</span>
+            <h3 class="legal-card__title">Kepemilikan &amp; Kepengurusan</h3>
+            <p class="legal-card__desc">Dipimpin oleh <strong>Christian Matthew Napitupulu</strong> selaku Direktur Utama, dengan struktur kepengurusan yang sah dan terdokumentasi.</p>
+            <span class="legal-card__status legal-card__status--valid">✓ Resmi</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner disclaimer -->
+      <div class="legalitas__note">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <span>Untuk verifikasi dokumen legalitas lebih lanjut, silakan hubungi kami melalui <a href="mailto:24christian.napitupulu@oel.sch.id" class="email-link" data-email="24christian.napitupulu@oel.sch.id">email resmi</a> atau <a href="https://wa.me/62881025268889" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== ADVANTAGES ========== -->
+  <section class="visi-misi" id="advantages">
+    <div class="container">
+      <div class="section-tag">Advantages</div>
+      <h2 class="section-title center">Keunggulan & Solusi</h2>
+      <div class="features__grid" style="margin-top: 48px;">
+
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Integrasi Wi-Fi Ringkas</h3>
+          <p>Sistem Wi-Fi terintegrasi langsung pada NodeMCU ESP8266 tanpa memerlukan modul tambahan.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Pemrograman Fleksibel</h3>
+          <p>Kompatibel penuh dengan Arduino IDE sehingga mudah dikembangkan dan dikustomisasi.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Manajemen Daya & Drop Voltage</h3>
+          <p>Sistem manajemen daya yang efisien untuk mencegah penurunan tegangan selama operasi.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Latency Koneksi Wi-Fi</h3>
+          <p>Koneksi Wi-Fi dengan latensi rendah untuk respons kendali yang cepat dan akurat.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Regulasi Tegangan Terpisah</h3>
+          <p>Modul regulasi tegangan terpisah memastikan kestabilan daya pada setiap komponen.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__num">✅</div>
+          <h3>Optimasi Kode Arduino</h3>
+          <p>Kode Arduino yang telah dioptimasi untuk performa maksimal dan konsumsi memori minimal.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEADERSHIP TEAM ========== -->
+  <section class="leadership" id="leadership">
+    <div class="container">
+      <div class="section-tag">Leadership Team</div>
+      <h2 class="section-title center">Tim Kepemimpinan</h2>
+      <p class="section-subtitle center" style="margin-bottom:8px;opacity:.7;font-size:.95rem;">Klik kartu untuk melihat profil lengkap</p>
+      <div class="leadership__grid">
+
+        <div class="leader-card" data-profile="christian" style="cursor:pointer;" title="Lihat Profil">
+          <div class="leader-card__avatar">
+            <img src="img/Ceo.jpeg" alt="Christian Matthew Napitupulu" />
+          </div>
+          <h3 class="leader-card__name">Christian Matthew Napitupulu</h3>
+          <span class="leader-card__role">CEO — Chief Executive Officer</span>
+          <span class="leader-card__hint">👆 Lihat Profil</span>
+        </div>
+
+        <div class="leader-card" data-profile="darius" style="cursor:pointer;" title="Lihat Profil">
+          <div class="leader-card__avatar">
+            <img src="img/darius.png" alt="Darius Oktovio Mulyo" />
+          </div>
+          <h3 class="leader-card__name">Darius Oktovio Mulyo</h3>
+          <span class="leader-card__role">COO — Chief Operating Officer</span>
+          <span class="leader-card__hint">👆 Lihat Profil</span>
+        </div>
+
+        <div class="leader-card" data-profile="janice" style="cursor:pointer;" title="Lihat Profil">
+          <div class="leader-card__avatar">
+            <img src="img/janice.png" alt="Janice Yvanna Fidelia Tomasowa" />
+          </div>
+          <h3 class="leader-card__name">Janice Yvanna Fidelia Tomasowa</h3>
+          <span class="leader-card__role">CFO — Chief Financial Officer</span>
+          <span class="leader-card__hint">👆 Lihat Profil</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROFILE MODAL ========== -->
+  <div class="profile-modal" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="profile-modal__backdrop" id="modalBackdrop"></div>
+    <div class="profile-modal__box">
+      <button class="profile-modal__close" id="modalClose" aria-label="Tutup profil">&times;</button>
+      <div class="profile-modal__content">
+        <div class="profile-modal__photo">
+          <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="profile-modal__info">
+          <span class="profile-modal__tag" id="modalTag"></span>
+          <h2 class="profile-modal__name" id="modalName"></h2>
+          <span class="profile-modal__role" id="modalRole"></span>
+          <p class="profile-modal__desc" id="modalDesc"></p>
+          <div class="profile-modal__stats" id="modalStats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT / CTA ========== -->
+  <section class="cta-section" id="contact">
+    <div class="container cta-section__inner">
+      <h2>Siap berkolaborasi<br />bersama PT Sambastian?</h2>
+      <p>Hubungi kami untuk konsultasi solusi robotika dan otomasi logistik untuk bisnis Anda.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <a href="https://wa.me/62881025268889" target="_blank" rel="noopener noreferrer">+62 881-0252-68889</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </span>
+          <a href="#" class="email-link" data-email="24christian.napitupulu@oel.sch.id">24christian.napitupulu@oel.sch.id</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🌐</span>
+          <a href="https://sambastian.netlify.app/" target="_blank">sambastian.netlify.app</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Angsana+Rw.+Buntu+Kec.+Serpong+Kota+Tangerang+Selatan+Banten+15310" target="_blank" rel="noopener noreferrer" class="maps-link">Jl. Angsana, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten 15310 📍</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo">
+          <img src="img/logo.png" alt="PT Sambastian" class="navbar__logo-img navbar__logo-img--footer" />
+        </a>
+        <p>Intralogistics & Mobile Robotics Solutions.</p>
+        <p style="margin-top: 8px;">PT Sambastian &mdash; Tangerang Selatan, 2026</p>
+      </div>
+      <div class="footer__links">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#visi-misi">Visi & Misi</a></li>
+          <li><a href="#legalitas">Legalitas</a></li>
+          <li><a href="#leadership">Tim</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="#product">Robot Logistik</a></li>
+          <li><a href="#advantages">Keunggulan</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>&copy; 2026 PT Sambastian. All rights reserved. | SAMBASTIAN COMPANY 2026 INTRALOGISTICS / MOBILE ROBOTICS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LEGAL MODAL ========== -->
+  <div class="legal-modal" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="legal-modal__backdrop" id="legalModalBackdrop"></div>
+    <div class="legal-modal__box">
+      <button class="profile-modal__close" id="legalModalClose" aria-label="Tutup">&times;</button>
+
+      <div class="legal-modal__header">
+        <div class="legal-modal__icon" id="legalIcon"></div>
+        <div>
+          <span class="legal-card__label" id="legalLabel"></span>
+          <h2 class="legal-modal__title" id="legalModalTitle"></h2>
+          <span id="legalModalStatus"></span>
+        </div>
+      </div>
+
+      <div class="legal-modal__body">
+        <p class="legal-modal__desc" id="legalModalDesc"></p>
+        <div class="legal-modal__details" id="legalModalDetails"></div>
+        <div class="legal-modal__dasar">
+          <h4>Dasar Hukum</h4>
+          <p id="legalModalDasar"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== LEGAL MODAL SCRIPT ========== -->
+  <script>
+    var legalData = {
+      akta: {
+        icon:   '📜',
+        label:  'Akta Pendirian',
+        title:  'Akta Notaris Pendirian PT',
+        status: { text: '✓ Terdaftar', cls: 'legal-card__status--valid' },
+        desc:   'PT Sambastian didirikan secara resmi berdasarkan akta notaris yang dibuat di hadapan Notaris berwenang. Akta ini menjadi dokumen hukum utama yang melegitimasi keberadaan perusahaan sebagai badan hukum Perseroan Terbatas di Indonesia.',
+        details: [
+          { label: 'Nama Perusahaan',    value: 'PT Sambastian' },
+          { label: 'Bentuk Badan Usaha', value: 'Perseroan Terbatas (PT)' },
+          { label: 'Bidang Usaha',       value: 'Intralogistics & Mobile Robotics' },
+          { label: 'Direktur Utama',     value: 'Christian Matthew Napitupulu' },
+          { label: 'Domisili',           value: 'Tangerang Selatan, Banten' }
+        ],
+        dasar: 'Undang-Undang Republik Indonesia No. 40 Tahun 2007 tentang Perseroan Terbatas (UUPT).'
+      },
+      nib: {
+        icon:   '🏛️',
+        label:  'NIB',
+        title:  'Nomor Induk Berusaha',
+        status: { text: '✓ Aktif', cls: 'legal-card__status--valid' },
+        desc:   'Nomor Induk Berusaha (NIB) adalah identitas pelaku usaha yang diterbitkan oleh Lembaga OSS dan sekaligus berlaku sebagai Tanda Daftar Perusahaan (TDP), Angka Pengenal Importir (API), serta akses kepabeanan.',
+        details: [
+          { label: 'Penerbit', value: 'Kementerian Investasi / BKPM RI' },
+          { label: 'Sistem',   value: 'OSS (Online Single Submission)' },
+          { label: 'Fungsi',   value: 'Identitas resmi pelaku usaha' },
+          { label: 'Status',   value: 'Aktif & Berlaku' }
+        ],
+        dasar: 'PP No. 5 Tahun 2021 tentang Penyelenggaraan Perizinan Berusaha Berbasis Risiko (OSS-RBA).'
+      },
+      npwp: {
+        icon:   '💼',
+        label:  'NPWP Badan',
+        title:  'Nomor Pokok Wajib Pajak',
+        status: { text: '✓ Terdaftar', cls: 'legal-card__status--valid' },
+        desc:   'PT Sambastian terdaftar sebagai Wajib Pajak Badan di Kantor Pelayanan Pajak (KPP) wilayah Tangerang Selatan. Perusahaan secara rutin memenuhi kewajiban perpajakan termasuk pelaporan SPT Tahunan Badan dan pajak lainnya.',
+        details: [
+          { label: 'Jenis',     value: 'NPWP Badan Usaha' },
+          { label: 'Instansi',  value: 'Direktorat Jenderal Pajak (DJP)' },
+          { label: 'KPP',       value: 'Pratama Tangerang Selatan' },
+          { label: 'Kewajiban', value: 'PPh Badan, PPN, SPT Tahunan' },
+          { label: 'Status',    value: 'Aktif & Patuh Pajak' }
+        ],
+        dasar: 'UU No. 36 Tahun 2008 tentang Pajak Penghasilan dan UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan.'
+      },
+      siup: {
+        icon:   '📋',
+        label:  'Izin Usaha',
+        title:  'Surat Izin Usaha Perdagangan',
+        status: { text: '✓ Berlaku', cls: 'legal-card__status--valid' },
+        desc:   'PT Sambastian memiliki izin usaha resmi yang mencakup kegiatan perdagangan produk robotika, jasa digital marketing, dan solusi otomasi logistik. Izin ini diterbitkan oleh instansi pemerintah daerah yang berwenang di Kota Tangerang Selatan.',
+        details: [
+          { label: 'Jenis Izin', value: 'Izin Usaha Perdagangan & Jasa' },
+          { label: 'Penerbit',   value: 'DPMPTSP Kota Tangerang Selatan' },
+          { label: 'Cakupan',    value: 'Perdagangan Robotika & Jasa Digital' },
+          { label: 'Wilayah',    value: 'Tangerang Selatan, Banten' },
+          { label: 'Status',     value: 'Berlaku' }
+        ],
+        dasar: 'PP No. 5 Tahun 2021 tentang Perizinan Berusaha Berbasis Risiko dan Permendag terkait izin usaha perdagangan.'
+      },
+      domisili: {
+        icon:   '📍',
+        label:  'Domisili Usaha',
+        title:  'Surat Keterangan Domisili',
+        status: { text: '✓ Berlaku', cls: 'legal-card__status--valid' },
+        desc:   'PT Sambastian berdomisili resmi dan memiliki Surat Keterangan Domisili Usaha (SKDU) yang diterbitkan oleh pemerintah setempat. Alamat ini terdaftar sebagai kantor pusat operasional perusahaan.',
+        details: [
+          { label: 'Alamat Lengkap', value: 'Jl. Angsana, Rw. Buntu, Kec. Serpong' },
+          { label: 'Kota',           value: 'Kota Tangerang Selatan' },
+          { label: 'Provinsi',       value: 'Banten' },
+          { label: 'Kode Pos',       value: '15310' },
+          { label: 'Status',         value: 'Berlaku' }
+        ],
+        dasar: 'Peraturan daerah Kota Tangerang Selatan tentang penertiban dan pendataan domisili usaha.'
+      },
+      struktur: {
+        icon:   '👥',
+        label:  'Struktur Perusahaan',
+        title:  'Kepemilikan & Kepengurusan',
+        status: { text: '✓ Resmi', cls: 'legal-card__status--valid' },
+        desc:   'Struktur kepengurusan PT Sambastian terdokumentasi secara resmi dalam akta notaris dan terdaftar di Kementerian Hukum dan HAM. Setiap jabatan diisi oleh individu yang kompeten dan bertanggung jawab penuh terhadap fungsinya.',
+        details: [
+          { label: 'Direktur Utama (CEO)',     value: 'Christian Matthew Napitupulu' },
+          { label: 'Kepala Operasional (COO)', value: 'Darius Oktovio Mulyo' },
+          { label: 'Kepala Keuangan (CFO)',    value: 'Janice Yvanna Fidelia Tomasowa' },
+          { label: 'Bidang Usaha',             value: 'Intralogistics & Mobile Robotics' },
+          { label: 'Status Badan Hukum',       value: 'Terdaftar & Disahkan' }
+        ],
+        dasar: 'UU No. 40 Tahun 2007 tentang Perseroan Terbatas, Pasal 92 tentang Direksi dan Dewan Komisaris.'
+      }
+    };
+
+    var legalModal    = document.getElementById('legalModal');
+    var legalBackdrop = document.getElementById('legalModalBackdrop');
+    var legalClose    = document.getElementById('legalModalClose');
+
+    function openLegal(key) {
+      var d = legalData[key];
+      if (!d) return;
+
+      document.getElementById('legalIcon').textContent       = d.icon;
+      document.getElementById('legalLabel').textContent      = d.label;
+      document.getElementById('legalModalTitle').textContent = d.title;
+      document.getElementById('legalModalDesc').textContent  = d.desc;
+      document.getElementById('legalModalDasar').textContent = d.dasar;
+
+      var statusEl = document.getElementById('legalModalStatus');
+      statusEl.className   = 'legal-card__status ' + d.status.cls;
+      statusEl.textContent = d.status.text;
+      statusEl.style.cssText = 'margin-top:6px;display:inline-flex;';
+
+      document.getElementById('legalModalDetails').innerHTML = d.details.map(function(item) {
+        return '<div class="legal-modal__row"><span class="legal-modal__row-label">' + item.label + '</span><span class="legal-modal__row-value">' + item.value + '</span></div>';
+      }).join('');
+
+      legalModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLegal() {
+      legalModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.legal-card[data-legal]').forEach(function(card) {
+      card.addEventListener('click', function() { openLegal(this.getAttribute('data-legal')); });
+    });
+
+    legalClose.addEventListener('click', closeLegal);
+    legalBackdrop.addEventListener('click', closeLegal);
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLegal(); });
+  </script>
+
+  <!-- ========== PROFILE MODAL SCRIPT ========== -->
+  <script>
+    // Data profil masing-masing anggota tim
+    var profiles = {
+      christian: {
+        img:  'img/Ceo.jpeg',
+        tag:  'CEO',
+        name: 'Christian Matthew Napitupulu',
+        role: 'Chief Executive Officer',
+        desc: 'Christian adalah pendiri sekaligus Direktur Utama PT Sambastian. Ia memimpin visi perusahaan dalam menghadirkan solusi robotika mobilitas modern untuk industri Indonesia. Dengan latar belakang kuat di bidang teknologi dan rekayasa sistem, Christian mendorong inovasi berkelanjutan di setiap lini produk.',
+        stats: [
+          { label: 'Posisi',     value: 'Direktur Utama' },
+          { label: 'Bidang',     value: 'Robotika & Strategi' },
+          { label: 'Perusahaan', value: 'PT Sambastian' }
+        ]
+      },
+      darius: {
+        img:  'img/darius.png',
+        tag:  'COO',
+        name: 'Darius Oktovio Mulyo',
+        role: 'Chief Operating Officer',
+        desc: 'Darius bertanggung jawab atas seluruh operasional harian PT Sambastian. Ia memastikan proses produksi, distribusi, dan layanan berjalan efisien dan sesuai standar kualitas tinggi yang ditetapkan perusahaan.',
+        stats: [
+          { label: 'Posisi',     value: 'Kepala Operasional' },
+          { label: 'Bidang',     value: 'Operasi & Produksi' },
+          { label: 'Perusahaan', value: 'PT Sambastian' }
+        ]
+      },
+      janice: {
+        img:  'img/janice.png',
+        tag:  'CFO',
+        name: 'Janice Yvanna Fidelia Tomasowa',
+        role: 'Chief Financial Officer',
+        desc: 'Janice mengelola seluruh aspek keuangan dan perencanaan anggaran PT Sambastian. Keahliannya dalam analisis keuangan dan manajemen investasi memastikan pertumbuhan perusahaan yang sehat dan berkelanjutan.',
+        stats: [
+          { label: 'Posisi',     value: 'Kepala Keuangan' },
+          { label: 'Bidang',     value: 'Keuangan & Investasi' },
+          { label: 'Perusahaan', value: 'PT Sambastian' }
+        ]
+      }
+    };
+
+    var modal    = document.getElementById('profileModal');
+    var backdrop = document.getElementById('modalBackdrop');
+    var closeBtn = document.getElementById('modalClose');
+
+    function openProfile(key) {
+      var p = profiles[key];
+      if (!p) return;
+
+      document.getElementById('modalImg').src        = p.img;
+      document.getElementById('modalImg').alt        = p.name;
+      document.getElementById('modalTag').textContent  = p.tag;
+      document.getElementById('modalName').textContent = p.name;
+      document.getElementById('modalRole').textContent = p.role;
+      document.getElementById('modalDesc').textContent = p.desc;
+
+      // Render stats
+      var statsEl = document.getElementById('modalStats');
+      statsEl.innerHTML = p.stats.map(function(s) {
+        return '<div class="profile-modal__stat"><span class="profile-modal__stat-label">' + s.label + '</span><span class="profile-modal__stat-value">' + s.value + '</span></div>';
+      }).join('');
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProfile() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Klik kartu tim
+    document.querySelectorAll('.leader-card[data-profile]').forEach(function(card) {
+      card.addEventListener('click', function() {
+        openProfile(this.getAttribute('data-profile'));
+      });
+    });
+
+    // Tutup modal
+    closeBtn.addEventListener('click', closeProfile);
+    backdrop.addEventListener('click', closeProfile);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeProfile();
+    });
+  </script>
+
+
+  <script>
+    // Deteksi apakah pengguna menggunakan HP atau PC
+    // HP  → pakai mailto: (otomatis buka aplikasi Gmail/email di Android & iOS)
+    // PC  → buka Gmail web langsung di tab baru
+    document.querySelectorAll('.email-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var email = this.getAttribute('data-email');
+        var isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+          // Di HP: buka aplikasi email / Gmail
+          window.location.href = 'mailto:' + email;
+        } else {
+          // Di PC: buka Gmail compose di tab baru
+          window.open('https://mail.google.com/mail/?view=cm&to=' + encodeURIComponent(email), '_blank');
+        }
+      });
+    });
+  </script>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" title="Kembali ke atas">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script>
+    // Scroll to top
+    const btn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Hero slideshow: robot image → local video
+    const slides   = [document.getElementById('slideImg'), document.getElementById('slideLocal')];
+    const dots     = [document.getElementById('dot0'), document.getElementById('dot1')];
+    const localVid = document.getElementById('localVid');
+    let current    = 0;
+    let timer;
+
+    // Durasi tiap slide (ms): gambar=5s, video lokal=19s
+    const durations = [5000, 19000];
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+
+      // Pause video lokal jika keluar dari slide video
+      if (current === 1) {
+        localVid.pause();
+        localVid.currentTime = 0;
+      }
+
+      current = index;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+
+      // Play video lokal saat masuk slide video
+      if (current === 1) {
+        localVid.play();
+      }
+
+      startTimer();
+    }
+
+    function startTimer() {
+      clearInterval(timer);
+      timer = setTimeout(() => {
+        goTo((current + 1) % slides.length);
+      }, durations[current]);
+    }
+
+    // Klik dot untuk ganti manual
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(timer);
+        goTo(i);
+      });
+    });
+
+    // Tombol panah
+    document.getElementById('slidePrev').addEventListener('click', () => {
+      clearInterval(timer);
+      goTo((current - 1 + slides.length) % slides.length);
+    });
+    document.getElementById('slideNext').addEventListener('click', () => {
+      clearInterval(timer);
+      goTo((current + 1) % slides.length);
+    });
+
+    startTimer();
+  </script>
+
+</body>
+</html>
